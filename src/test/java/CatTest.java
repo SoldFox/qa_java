@@ -5,10 +5,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-
-import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -24,9 +21,6 @@ public class CatTest {
         String actual = cat.getSound();
         String expected = "Мяу";
 
-        System.out.println(actual);
-        System.out.println(expected);
-
         assertEquals("Метод должен возвращать: Мяу",expected, actual);
     }
 
@@ -38,10 +32,6 @@ public class CatTest {
         List<String> actual = cat.getFood();
         List<String> expected = List.of("Животные", "Птицы", "Рыба");
 
-        System.out.println(actual);
-        System.out.println(expected);
-        assertEquals(expected,actual);
+        assertEquals("Метод должен возвращать данные метода: predator.eatMeat()",expected,actual);
     }
-
-
 }

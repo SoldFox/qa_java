@@ -3,7 +3,6 @@ import com.example.Lion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -32,10 +31,6 @@ public class LionTestHasMane {
 
         boolean actual = lion.doesHaveMane();
 
-        System.out.println(actual);
-        System.out.println(expected);
         assertEquals(expected,actual);
     }
-
-
 }
